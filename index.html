@@ -4,32 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>J TECHNOLOGIES - B2B IT Solutions Visnagar</title>
-
-    <!-- Google Tag Manager -->
+ 
+    <!-- ================================================
+         GOOGLE TAG MANAGER (GTM) - Base Tag
+    ================================================ -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WGVV6423');</script>
     <!-- End Google Tag Manager -->
-
-    <!-- Google tag (gtag.js) -->
+ 
+    <!-- ================================================
+         GOOGLE ADS - Global Site Tag (gtag.js)
+         Account ID: AW-17985453970
+    ================================================ -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17985453970"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+ 
+      // Google Ads Account Config
       gtag('config', 'AW-17985453970');
     </script>
-
-    <!-- Google Ads Conversion Tracking -->
+ 
+    <!-- ================================================
+         GOOGLE ADS - Conversion Event Tags
+         Conversion Label: n6-yCInG-Z8cEJL_kIBD
+         Trigger: Phone Call Click
+    ================================================ -->
     <script>
+      // Conversion 1: Phone Call Click
       function trackCall() {
-        gtag('event', 'conversion', {'send_to': 'AW-17985453970/n6-yCInG-Z8cEJL_kIBD'});
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17985453970/n6-yCInG-Z8cEJL_kIBD',
+          'value': 1.0,
+          'currency': 'INR'
+        });
       }
+ 
+      // Conversion 2: Contact Form / Email Click
+      function trackEmail() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17985453970/n6-yCInG-Z8cEJL_kIBD',
+          'value': 1.0,
+          'currency': 'INR'
+        });
+      }
+ 
+      // Page Visit Event (for remarketing)
+      gtag('event', 'page_view', {
+        'send_to': 'AW-17985453970'
+      });
     </script>
-
+ 
     <style>
+        * { box-sizing: border-box; }
+ 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -38,6 +70,7 @@
             color: #333;
             line-height: 1.6;
         }
+ 
         header {
             background: linear-gradient(135deg, #007bff, #0056b3);
             color: white;
@@ -62,6 +95,7 @@
             top: 20px;
             left: 20px;
         }
+ 
         nav {
             background-color: #343a40;
             padding: 15px 10px;
@@ -80,6 +114,7 @@
             transition: color 0.3s;
         }
         nav a:hover { color: #007bff; }
+ 
         section {
             padding: 40px 20px;
             max-width: 900px;
@@ -96,6 +131,7 @@
             font-weight: 700;
             font-size: 2em;
         }
+ 
         .service {
             background-color: #f0f8ff;
             margin-bottom: 25px;
@@ -115,6 +151,7 @@
             height: 80px;
             margin-right: 20px;
             border-radius: 8px;
+            object-fit: cover;
         }
         .service h3 {
             color: #0056b3;
@@ -128,6 +165,45 @@
             color: #333;
             margin: 0;
         }
+ 
+        /* CTA Button */
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.4);
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,123,255,0.5);
+            color: white;
+        }
+ 
+        .contact-card {
+            background: linear-gradient(135deg, #007bff11, #0056b311);
+            border: 2px solid #007bff33;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+        }
+        .contact-card p {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+        .contact-card a {
+            color: #0056b3;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .contact-card a:hover { text-decoration: underline; }
+ 
         footer {
             background-color: #343a40;
             color: white;
@@ -137,6 +213,7 @@
             margin-top: 40px;
             font-size: 1em;
         }
+ 
         @media (max-width: 768px) {
             header h1 { font-size: 2.2em; }
             nav a { display: block; margin: 10px 0; font-size: 1.2em; }
@@ -153,38 +230,39 @@
     </style>
 </head>
 <body>
-
+ 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGVV6423"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+ 
     <header>
         <img src="logo.jpeg" alt="J TECHNOLOGIES Logo" class="logo" />
         <h1><strong>Welcome to J TECHNOLOGIES</strong></h1>
         <p><strong>Trusted IT Partner for Businesses in Visnagar</strong></p>
     </header>
-
+ 
     <nav>
         <a href="#home"><strong>Home</strong></a>
         <a href="#about"><strong>About</strong></a>
         <a href="#services"><strong>Services</strong></a>
         <a href="#contact"><strong>Contact</strong></a>
     </nav>
-
+ 
     <section id="home">
         <h2><strong>Home</strong></h2>
         <p>J TECHNOLOGIES provides professional IT solutions exclusively for businesses in Visnagar. We specialize in IT infrastructure management, network solutions, and enterprise tech support. Our expert team ensures your business runs smoothly with reliable, efficient, and affordable IT services tailored to your business needs.</p>
+        <a href="tel:9328753938" class="cta-btn" onclick="trackCall()">📞 Call Us Now - Free Consultation</a>
     </section>
-
+ 
     <section id="about">
         <h2><strong>About Us</strong></h2>
         <p>J TECHNOLOGIES is a leading B2B IT solutions provider based in Visnagar, Gujarat. We work exclusively with local businesses, offices, and enterprises to manage their technology infrastructure. With years of experience, we are committed to delivering top-notch IT management services through trust, innovation, and long-term business partnerships.</p>
     </section>
-
+ 
     <section id="services">
         <h2><strong>Our Services</strong></h2>
-
+ 
         <div class="service">
             <img src="installation.jpeg" alt="IT Infrastructure" />
             <div>
@@ -192,7 +270,7 @@
                 <p>We set up and manage complete IT infrastructure for offices and businesses. From workstation configuration to enterprise system deployment, we ensure your business technology is optimized for maximum productivity and performance.</p>
             </div>
         </div>
-
+ 
         <div class="service">
             <img src="network.jpeg" alt="Network Solutions" />
             <div>
@@ -200,7 +278,7 @@
                 <p>End-to-end network planning, setup, and management for offices and commercial spaces. We deploy secure Wi-Fi, wired networks, routers, and firewalls to ensure fast and protected business connectivity.</p>
             </div>
         </div>
-
+ 
         <div class="service">
             <img src="repair.jpg" alt="IT Management" />
             <div>
@@ -208,7 +286,7 @@
                 <p>Proactive IT management for businesses including system monitoring, performance optimization, and scheduled maintenance. We keep your business technology running at peak efficiency with zero downtime.</p>
             </div>
         </div>
-
+ 
         <div class="service">
             <img src="softwareinstallation.jpeg" alt="Enterprise Software" />
             <div>
@@ -216,7 +294,7 @@
                 <p>We help businesses deploy, configure, and manage enterprise software applications, productivity suites, and security solutions tailored to your specific business workflow and requirements.</p>
             </div>
         </div>
-
+ 
         <div class="service">
             <img src="newsetup.jpeg" alt="Office Setup" />
             <div>
@@ -224,22 +302,34 @@
                 <p>Complete IT setup for new offices and expanding businesses. From planning to execution, we handle full office IT deployment including workstations, networking, and system configuration for businesses of all sizes.</p>
             </div>
         </div>
-
+ 
         <p>Contact us for custom IT solutions including cybersecurity consulting, IT audits, and enterprise technology planning. We serve businesses across Visnagar and surrounding areas.</p>
     </section>
-
+ 
     <section id="contact">
         <h2><strong>Contact Us</strong></h2>
-        <p><strong>Phone:</strong> <a href="tel:9328753938" onclick="trackCall()">9328753938</a></p>
-        <p><strong>Email:</strong> jtechnologies18@gmail.com</p>
-        <p><strong>Address:</strong> Subh City Royal, Visnagar - 384315</p>
-        <p>Find us on Google: Search "J TECHNOLOGIES" for directions. We serve businesses across Visnagar. Schedule a free IT consultation today!</p>
+ 
+        <div class="contact-card">
+            <p>📞 <strong>Phone:</strong>
+                <a href="tel:9328753938" onclick="trackCall()">9328753938</a>
+                &nbsp;— Click to call (tracked)
+            </p>
+            <p>📧 <strong>Email:</strong>
+                <a href="mailto:jtechnologies18@gmail.com" onclick="trackEmail()">jtechnologies18@gmail.com</a>
+            </p>
+            <p>📍 <strong>Address:</strong> Subh City Royal, Visnagar - 384315</p>
+        </div>
+ 
+        <a href="tel:9328753938" class="cta-btn" onclick="trackCall()">📞 Call Now - Free IT Consultation</a>
+ 
+        <p style="margin-top:20px;">Find us on Google: Search "J TECHNOLOGIES" for directions. We serve businesses across Visnagar. Schedule a free IT consultation today!</p>
     </section>
-
+ 
     <footer>
         <p>&copy; 2026 J TECHNOLOGIES. All rights reserved. | Powered by Innovation and Trust</p>
         <p>Providing B2B IT Solutions in Visnagar, Gujarat.</p>
     </footer>
-
+ 
 </body>
 </html>
+ 
